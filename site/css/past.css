@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #40593C;
+
+   }
+.slide {
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 5vw;
+}
+
+.slide p {
+    margin: 0 25vh;
+}
+
+.text {
+    padding: 15px 5vw;
+}
+
+.graph{
+    margin-top: 20px;
+}
+.blocHorizontal {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    width: 400vw;
+
+
+}
+
+.accueilLink {
+    position: fixed;
+    top: 1vw;
+    left: 47%;
+    text-decoration: none;
+    color: 40593C;
+    font-size: 24px;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+.accueilLink:hover {
+    border: 2px solid #40593C;
+    transition: 0.2s;
+}
+
+.flex {
+    display: flex;
+}
+
+.containerScroll {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    /* pour ie et mozilla */
+    -ms-overlow-style: none;
+    scrollbar-width: none;
+
+
+    background: rgb(238,252,190);
+    background: linear-gradient(90deg, rgba(238,252,190,1) 0%, rgba(219,237,188,1) 45%, rgba(196,230,198,1) 100%);
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.citationSlide img{
+    margin-top: 25px;
+}
+
+.citationSlide {
+    font-size: 34px;
+}
+.saviez {
+    position:relative;
+}
+    .saviez .tip-saviez {
+        position:absolute;
+        top:10px;
+        right:9999px;
+        width:400px;
+        margin-right:-210px;
+        padding:10px;
+		font-size: small;
+        color:#40593c;
+        background:#F0F0F0;
+        -webkit-box-shadow:2px 2px 5px #aaa;
+           -moz-box-shadow:2px 2px 5px #aaa;
+                box-shadow:2px 2px 5px #aaa;
+        opacity:0;
+        -webkit-transition:opacity 250ms ease-out;
+           -moz-transition:opacity 250ms ease-out;
+            -ms-transition:opacity 250ms ease-out;
+             -o-transition:opacity 250ms ease-out;
+                transition:opacity 250ms ease-out;
+    }
+        .saviez .tip-saviez:before {
+			content:' ';
+			position:absolute;
+			top:35%;
+			left:400px;
+			width: 0; 
+			height: 0;
+			border-top: 13px solid transparent;
+			border-bottom: 13px solid transparent;	
+			border-left: 13px solid #333;
+		}
+		.saviez:hover .tip-saviez {
+			right:400px;
+			opacity:1;
+		}
+
+.citation {
+    font-style: italic;
+    text-align: center;
+}

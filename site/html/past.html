@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOGO</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.0.2/dist/echarts.min.js"></script>
+    <script type="text/JSON" src="./../../data/temp.json"></script>
+    <link href='../css/past.css' rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <div class="containerScroll">
+        <div class="blocHorizontal">
+            <div class="slide all">
+                <h2>Qu'est-ce qui réchauffe réellement la Terre ?</h2>
+                <p>Depuis 1880, la totalité des rapports météorologiques enregistre des températures moyennes de surface et atmosphérique toujours plus élevées.</p>
+                <p> Mais GoGo, pourquoi les températures augmentent-elles ?</p>
+                <div id="graphall" class='graph' style="width: 1000px;height:500px;"></div>
+            </div>
+            <div class="slide solar">
+                <h2>Gogo, est-ce le soleil ?</h2>
+                <p>Le soleil fourni la quasi-totalité de l’énergie reçue par la terre et influence ainsi son climat. On peut alors penser qu’il est à l’origine du réchauffement climatique. Cependant les variations de la quantité d’énergie solaire reçue par la terre sont négligeables.</p>
+                <div id="graphsolar" class='graph' style="width: 1000px;height:500px;"></div>
+            </div>
+            <div class="slide orbital">
+                <h2>Gogo, est-ce le changement de l’orbite terrestre ?</h2>
+                <p>Les variations de l’orbite terrestre nous éloignent et rapprochent périodiquement du soleil impactant la quantité d’énergie solaire reçue par la terre. Pourtant ces dernières décennies, la température moyenne du globe augmente trop rapidement pour que cette variation qui est beaucoup plus lente en soit la cause.</p>
+                <div id="graphorbital" class='graph' style="width: 1000px;height:500px;"></div>
+            </div>
+            <div class="slide volcanic">
+                <h2>Gogo, est-ce l’activité volcanique ?</h2>
+                <p>L’activité volcanique peut avoir un effet sur le climat du globe en raison de la somme pharaonique des aérosols qu’elle propulse dans l’atmosphère. Néanmoins les aérosols ayant un pouvoir de réflexion, le volcanisme a un effet refroidissant sur la température globale de la terre. De plus, ce n’est que temporaire !</p>
+                <div id="graphvolcanic" class='graph' style="width: 1000px;height:500px;"></div>
+            </div>
+            <div class="slide ghg">
+                <h2>Gogo, est-ce les gaz à effet de serre ?</h2>
+                <p>Mais Gogo on remarque une corrélation entre les gaz à effet de serre et l’augmentation de la température planétaire moyenne ! En effet, les gaz à effet de serre ont le pouvoir d’absorber les rayons infrarouges renvoyés par la surface terrestre, piégeant la chaleur reçue par le soleil. </p>
+                <div id="graphghg" class='graph' style="width: 1000px;height:500px;"></div>
+                <div class="saviez">
+                    <img width="200" src="../img/le-saviez-vous.png" >
+                    <div style="text-indent: 30px;">
+                        <span class="tip-saviez">Il existe une organisation intergouvernementale d’experts (le GIEC) chargée d’analyser les tendances du changement climatique et l’impact de l’homme sur celui-ci. Le GIEC réalise aussi des prévisions sur l’évolution du changement climatique jusqu’en 2100.</span>
+                    </div>
+                </div>       
+            </div>
+            <div class="slide human">
+                <h2>Gogo, quel est l’impact des facteurs humains ?</h2>
+                <p>Les facteurs d’origine anthropique correspondent incontestablement à la hausse des températures moyennes observée depuis 1880. Malgré tout il est toujours possible de stabiliser la tendance actuelle !</p>
+                <p>Mais Gogo comment peut-on faire ça ? Ne vous inquiétez pas, je vais vous donnez quelques conseils. </p>
+                <div id="graphhuman" class='graph' style="width: 1000px;height:400px;"></div>
+                <div class="saviez">
+                    <img width="200" src="../img/le-saviez-vous.png" >
+                    <div style="text-indent: 30px;">
+                        <span class="tip-saviez">L'effet de serre est un phénomène augmentant la température à la surface de la planète suite à l’emprisonnement des rayons solaires par les gaz à effet de serre. Les activités humaines accentuent ce phénomène. </span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide citationSlide">
+                <p class="citation"><strong>"CHACUN, PARCE QU’IL PENSE, EST SEUL RESPONSABLE DE LA SAGESSE OU DE LA FOLIE DE SA VIE, C’EST À DIRE DE SA DESTINÉE."</strong> <br></p>
+                <p>PLATON</p>
+                <img src="../img/singe4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <a href='./index.html' class="accueilLink btn">
+        <strong>Retourner à l'accueil &rarr;</strong>
+        
+    </a>
+    <script src="./../js/graph.js"></script>
+</body>
+</html>
